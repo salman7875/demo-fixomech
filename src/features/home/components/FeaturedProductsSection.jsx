@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+import arrowImg from "../../../assets/icons/Arrow.png";
 
 const products = [
   {
@@ -68,7 +68,7 @@ const FeaturedProductsSection = () => {
             Feature Product
           </span>
           <button className="absolute bottom-4 left-4 bg-white text-red-600 p-2 rounded-full shadow hover:bg-red-600 hover:text-white transition">
-            <ArrowUpRight size={18} />
+            <img src={arrowImg} className="h-full w-full" />
           </button>
         </div>
 
@@ -87,7 +87,7 @@ const FeaturedProductsSection = () => {
                   className="w-full h-[100px] object-contain mx-auto"
                 />
                 <button className="absolute top-4 right-4 bg-white text-red-600 p-2 rounded-full shadow hover:bg-red-600 hover:text-white transition">
-                  <ArrowUpRight size={18} />
+                  <img src={arrowImg} className="h-full w-full" />
                 </button>
               </div>
 

@@ -1,4 +1,5 @@
-import { CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import checkImg from "../../../assets/icons/Check.png";
 
 const FNBRangeSection = () => {
   return (
@@ -50,7 +51,11 @@ const FNBRangeSection = () => {
                 key={index}
                 className="flex items-center border border-red-500 rounded-lg px-4 py-4 h-16 hover:bg-red-50 transition-all"
               >
-                <CheckCircle className="text-red-600 mr-3 w-5 h-5 flex-shrink-0" />
+                <img
+                  src={checkImg}
+                  alt="Check png"
+                  className="h-5 w-5 shrink-0  mr-3"
+                />
                 <span className="text-gray-800 text-sm md:text-base font-semibold leading-snug">
                   {text}
                 </span>

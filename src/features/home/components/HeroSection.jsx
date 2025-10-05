@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Content */}
-      <div className="relative text-center px-4 max-w-3xl mx-auto">
+      <div className="relative text-center px-4 max-w-7xl mx-auto">
         <p className="text-sm md:text-base italic text-gray-300 mb-3">
           “Trusted globally for precision, innovation, and reliability”
         </p>
