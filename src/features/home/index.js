@@ -4,6 +4,7 @@ import FNBRangeSection from "./components/FnbRangeSection";
 import WhyFixoSection from "./components/WhyFixoSection";
 import IndustriesSection from "./components/IndustriesSection";
 import ServiceHightlight from "./components/ServiceHightlight";
+import BlogSection from "./components/BlogSection";
 
 export {
   HomePage,
@@ -12,4 +13,5 @@ export {
   WhyFixoSection,
   IndustriesSection,
   ServiceHightlight,
+  BlogSection,
 };

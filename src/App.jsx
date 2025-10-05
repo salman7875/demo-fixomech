@@ -1,7 +1,5 @@
-import { ProductPage } from "./features/product";
-import { AboutUsPage } from "./features/about-us";
-import { HomePage } from "./features/home";
+import MainRoute from "./routes/MainRoute";
 
 export const App = () => {
-  return <HomePage />;
+  return <MainRoute />;
 };
