@@ -38,32 +38,25 @@ const IndustriesSection = () => {
       </div>
 
       {/* Grid Layout */}
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6">
-        {/* Left column */}
+      <div className="max-w-7xl mx-auto sm:px-6 grid md:grid-cols-2 gap-6">
         <div className="grid md:grid-cols-3 gap-6">
           <div className="md:col-span-3 grid md:grid-cols-2 gap-6">
             <IndustryCard {...industries[0]} />
             <IndustryCard {...industries[1]} />
           </div>
 
-          {/* Big full-width card */}
           <div className="md:col-span-3">
             <IndustryCard {...industries[2]} big />
           </div>
         </div>
 
-        {/* Right column */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="col-span-3">
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="md:col-span-3">
             <IndustryCard {...industries[3]} big />
           </div>
           <div className="md:col-span-3 grid md:grid-cols-2 gap-6">
-            <div>
-              <IndustryCard {...industries[4]} />
-            </div>
-            <div>
-              <IndustryCard {...industries[5]} />
-            </div>
+            <IndustryCard {...industries[4]} />
+            <IndustryCard {...industries[5]} />
           </div>
         </div>
       </div>
