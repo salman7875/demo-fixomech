@@ -1,7 +1,6 @@
-import React from "react";
 import { CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
 
-export const FNBRangeSection = () => {
+const FNBRangeSection = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
@@ -63,3 +62,5 @@ export const FNBRangeSection = () => {
     </section>
   );
 };
+
+export default FNBRangeSection;

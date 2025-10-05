@@ -1,5 +1,3 @@
-import React from "react";
-
 const url = "https://avatars.githubusercontent.com/u/78205495?v=4";
 
 export const HeroSectionLayout = ({ children, bgUrl = url }) => {

@@ -1,6 +1,6 @@
-import { HeroSectionLayout } from "../../layout/HeroSectionLayout";
+import { HeroSectionLayout } from "../../../shared/components/layout/HeroSectionLayout";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
     <HeroSectionLayout bgUrl="https://avatars.githubusercontent.com/u/78205495?v=4">
       {/* Dark overlay */}
@@ -29,3 +29,5 @@ export const HeroSection = () => {
     </HeroSectionLayout>
   );
 };
+
+export default HeroSection;

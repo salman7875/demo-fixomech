@@ -1,7 +1,7 @@
-import { AboutUsPage } from "./pages/AboutUsPage";
-import { HomePage } from "./pages/HomePage";
-import { ProductPage } from "./pages/ProductPage";
+import { ProductPage } from "./features/product";
+import { AboutUsPage } from "./features/about-us";
+import { HomePage } from "./features/home";
 
 export const App = () => {
-  return <ProductPage />;
+  return <HomePage />;
 };

@@ -1,7 +1,7 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import React from "react";
 
-export const WhyFixoSection = () => {
+const WhyFixoSection = () => {
   return (
     <div className="bg-white py-8 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto text-center">
@@ -37,3 +37,5 @@ export const WhyFixoSection = () => {
     </div>
   );
 };
+
+export default WhyFixoSection;
