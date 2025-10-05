@@ -14,7 +14,7 @@ const WhyFixoSection = () => {
           <img
             src="https://avatars.githubusercontent.com/u/78205495?v=4"
             alt="Featured Product"
-            className="rounded-xl w-full object-cover h-[300px] md:h-[400px] lg:h-[350px]"
+            className="rounded-xl w-full object-cover h-[300px] md:h-[400px] lg:h-[550px]"
           />
           <span className="absolute top-4 left-4 bg-gray-400/70 text-white text-xs px-3 py-1 rounded-md">
             Feature Product

@@ -9,9 +9,8 @@ export const Header = () => {
   const navLinks = [
     { title: "Home", to: "/" },
     { title: "About", to: "/about-us" },
-    { title: "Services", to: "#" },
-    { title: "Portfolio", to: "#" },
-    { title: "Contact", to: "#" },
+    { title: "Products", to: "/product" },
+    { title: "Contact Us", to: "#" },
   ];
 
   return (

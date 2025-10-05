@@ -6,7 +6,9 @@ export default function GetQuote() {
           <h6>Get in touch now, to</h6>
           <h2 className="text-3xl font-semibold text-gray-800">
             GET A QUOTE, WITHIN{" "}
-            <span className="font-semibold text-black">24 HOURS</span>
+            <span className="font-semibold text-white bg-red-600 px-2">
+              24 HOURS
+            </span>
           </h2>
         </div>
 

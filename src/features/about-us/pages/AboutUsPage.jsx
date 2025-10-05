@@ -7,15 +7,19 @@ import {
   WhyFixoSection,
 } from "../../home";
 import HeroSection from "../components/HeroSection";
+import MissionSection from "../components/MissionSection";
+import OurCompanySection from "../components/OurCompanySection";
 
 const AboutUsPage = () => {
   return (
     <>
       <Header />
       <HeroSection />
+      <OurCompanySection />
       <WhyFixoSection />
       <ServiceHightlight />
       <IndustriesSection />
+      <MissionSection />
       <GetQuote />
       <Footer />
     </>
