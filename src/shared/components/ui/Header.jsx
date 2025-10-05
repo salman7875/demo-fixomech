@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
-  const [active, setActive] = useState("Home");
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = ["Home", "About", "Services", "Portfolio", "Contact"];
+  const location = useLocation();
+
+  const navLinks = [
+    { title: "Home", to: "/" },
+    { title: "About", to: "/about-us" },
+    { title: "Services", to: "#" },
+    { title: "Portfolio", to: "#" },
+    { title: "Contact", to: "#" },
+  ];
 
   return (
     <header className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
@@ -20,20 +28,23 @@ export const Header = () => {
 
         {/* Center: Nav Links */}
         <nav className="hidden md:flex space-x-6">
-          {navLinks.map((link) => (
-            <button
-              key={link}
-              onClick={() => setActive(link)}
-              className={`relative font-medium text-gray-700 hover:text-gray-900 transition-colors ${
-                active === link ? "text-red-600" : ""
-              }`}
-            >
-              {link}
-              {active === link && (
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 rounded-full"></span>
-              )}
-            </button>
-          ))}
+          {navLinks.map((nav) => {
+            const isActive = location.pathname === nav.to;
+            return (
+              <Link
+                key={nav.title}
+                to={nav.to}
+                className={`relative font-medium text-gray-700 hover:text-gray-900 transition-colors ${
+                  isActive ? "text-red-600" : ""
+                }`}
+              >
+                {nav.title}
+                {isActive && (
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 rounded-full"></span>
+                )}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right: Buttons */}
