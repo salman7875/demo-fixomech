@@ -7,6 +7,7 @@ import IndustriesSection from "../components/IndustriesSection";
 import FooterSection from "../../../shared/components/ui/Footer";
 import GetQuote from "../../../shared/components/ui/GetQuote";
 import ServiceHightlight from "../components/ServiceHightlight";
+import BlogSection from "../components/BlogSection";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <WhyFixoSection />
       <ServiceHightlight />
       <IndustriesSection />
+      <BlogSection />
       <GetQuote />
       <FooterSection />
     </div>
