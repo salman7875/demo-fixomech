@@ -15,7 +15,6 @@ const ProductDetailPage = () => {
       <Header />
       <HeroSection id={location.pathname.split("/").at(-1)} />
       <ProductOverview />
-
       <MoreProducts />
       <GetQuote />
       <Footer />
