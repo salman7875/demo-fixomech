@@ -1,4 +1,4 @@
-import { HeroSectionLayout } from "../../../shared/components/layout/HeroSectionLayout";
+import { HeroSectionLayout } from "../../../../shared/components/layout/HeroSectionLayout";
 
 const HeroSection = () => {
   return (
